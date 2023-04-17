@@ -1,0 +1,2211 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- BEGIN Info -->
+    <meta
+      name="description"
+      content="QMantis - Observability and monitoring for GraphQL APIs"
+    />
+    <meta name="title" property="og:title" content="QMantis" />
+    <meta property="og:type" content="Website" />
+
+    <meta name="image" property="og:image" content="assets/thumb.png" />
+
+    <meta
+      name="description"
+      property="og:description"
+      content="QMantis - Observability and monitoring for GraphQL APIs"
+    />
+    <meta name="author" content="QMantis" />
+    <!-- END Info -->
+
+    <!-- BEGIN favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="images/favicon/safari-pinned-tab.svg"
+      color="#88D7C6"
+    />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#EE6F57" />
+    <meta
+      name="msapplication-config"
+      content="images/favicon/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#F6F1E7" />
+    <!-- END favicon -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Herald</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css"
+    />
+    <link rel="stylesheet" href="stylesheets/reset.css" />
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="stylesheet" href="stylesheets/responsive.css" />
+  </head>
+
+  <body>
+    <header class="mobile-menu-closed">
+      <div id="header">
+        <a href="/">
+          <img src="images/logo/herald_logo.png" alt="Herald logo" />
+        </a>
+        <nav>
+          <a href="#start-here" class="selected">Start Here</a>
+          <a href="#case-study">Case Study</a>
+          <a href="#presentation">Presentation</a>
+          <a href="#our-team">Our Team</a>
+
+          <a href="https://github.com/qmantis" target="_blank" class="icon"
+            ><i class="fab fa-github"></i
+          ></a>
+        </nav>
+        <div id="menu">
+          <button type="button">
+            <svg
+              id="mobile-open"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+            <svg
+              id="mobile-close"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div id="header-buffer"></div>
+
+      <div id="mobile-menu">
+        <a href="#start-here" class="selected">Start Here</a>
+        <a href="#case-study">Case Study</a>
+        <a href="#presentation">Presentation</a>
+        <a href="#our-team">Our Team</a>
+
+        <a href="https://github.com/qmantis" target="_blank"
+          ><i class="fab fa-github"></i> GitHub</a
+        >
+      </div>
+    </header>
+
+    <div id="start-here" class="main-section">
+      <div class="h-full">
+        <div class="static-graphic-color qmantis-floral-white"></div>
+        <div class="qmantis-dark-purple">
+          <img
+            class="qmantis sm-screen"
+            src="images/logo/herald_full_logo.png"
+            alt="QMantis logo"
+          />
+          <img
+            class="qmantis lg-screen"
+            src="images/logo/herald_logo_text.png"
+            alt="Qmantis logo text"
+          />
+          <p class="light-text">
+            An open-source <span class="text-green-sheen">observability solution</span> that allows software developers
+            to conveniently collect and explore <span class="text-orange">telemetry data</span> emitted by their applications.
+          </p>
+        </div>
+      </div>
+      <div class="h-full">
+        <div class="qmantis-green-sheen static-graphic-green-greyscale">
+          <h2 class="lg-header">ELK Stack</h2>
+        </div>
+        <div class="qmantis-green-sheen">
+          <h2 class="sm-header">ELK Stack</h2>
+          <p>
+            Herald is built on the ELK stack, a popular set of tools used for
+            monitoring the health and performance of software systems.
+          </p>
+          <img
+            id="metrics-window"
+            src="./images/gifs/metrics.gif"
+            alt="metrics animation"
+          />
+        </div>
+      </div>
+      <div class="h-full">
+        <div class="qmantis-orange static-graphic-orange-greyscale">
+          <h2 class="lg-header">Logs, Traces & Metrics</h2>
+        </div>
+        <div class="qmantis-orange">
+          <h2 class="sm-header">Logs, Traces & Metrics</h2>
+          <p>
+            Explore logs, traces and metrics in a single location.
+          </p>
+          <img
+            id="traces-window"
+            src="./images/gifs/traces.gif"
+            alt="traces animation"
+          />
+        </div>
+      </div>
+    </div>
+
+    <aside id="toc">
+      <ul>
+        <li data-section="section-1" class="selected">
+          <a href="#section-1">
+            <div>
+              <div class="bullet">
+                <div></div>
+              </div>
+              <p>1. Introduction</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-2">
+          <a href="#section-2">
+            <div>
+              <div class="bullet">
+                <div></div>
+              </div>
+              <p>2. Observability</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-2" class="subitem">
+          <a href="#section-2-1">
+            <div>
+              <div class="bullet">
+                <div></div>
+              </div>
+              <p>2.1 Logs</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-2" class="subitem">
+          <a href="#section-2-2">
+            <div>
+              <div class="bullet">
+                <div></div>
+              </div>
+              <p>2.2 Traces</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-2" class="subitem">
+          <a href="#section-2-3">
+            <div>
+              <div class="bullet">
+                <div></div>
+              </div>
+              <p>2.3 Metrics</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-2" class="subitem">
+          <a href="#section-2-4">
+            <div>
+              <div class="bullet">
+                <div></div>
+              </div>
+              <p>2.4 Integrating, Logs, Traces, and Metrics</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-2" class="subitem">
+          <a href="#section-2-5">
+            <div>
+              <div class="bullet">
+                <div></div>
+              </div>
+              <p>2.5 The Challenge of Implementing Observability</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-3">
+          <a href="#section-3">
+            <div>
+              <div class="bullet">
+                <div></div>
+              </div>
+              <p>3. Existing Solutions</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-3" class="subitem">
+          <a href="#section-3-1">
+            <div>
+              <div class="bullet">
+                <div></div>
+              </div>
+              <p>3.1 Commercial Solutions</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-3" class="subitem">
+          <a href="#section-3-2">
+            <div>
+              <div class="bullet">
+                <div></div>
+              </div>
+              <p>3.2 DIY Open-Source Solutions</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-3" class="subitem">
+          <a href="#section-3-3">
+            <div>
+              <div class="bullet">
+                <div></div>
+              </div>
+              <p>3.3 Herald</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-4">
+          <a href="#section-4">
+            <div>
+              <div class="bullet">
+                <div></div>
+              </div>
+              <p>4. The Herald Pipeline</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-4" class="subitem">
+          <a href="#section-4-1">
+            <div>
+              <div class="bullet">
+                <div></div>
+              </div>
+              <p>4.1 Data Collection and Shipment</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-4" class="subitem">
+          <a href="#section-4-2">
+            <div>
+              <div class="bullet">
+                <div></div>
+              </div>
+              <p>4.2 Data Processing and Transformation</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-4" class="subitem">
+          <a href="#section-4-3">
+            <div>
+              <div class="bullet">
+                <div></div>
+              </div>
+              <p>4.3 Data Storage</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-4" class="subitem">
+          <a href="#section-4-4">
+            <div>
+              <div class="bullet">
+                <div></div>
+              </div>
+              <p>4.4 Visualization</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-5">
+          <a href="#section-5">
+            <div>
+              <div class="bullet">
+                <div></div>
+              </div>
+              <p>5. Our Solution: QMantis</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-5" class="subitem">
+          <a href="#section-5-1">
+            <div>
+              <div class="bullet">
+                <div></div>
+              </div>
+              <p>5.1 How Novels and Barns Can Use QMantis</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-5" class="subitem">
+          <a href="#section-5-2">
+            <div>
+              <div class="bullet">
+                <div></div>
+              </div>
+              <p>5.2 An Overview of QMantis</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-5" class="subitem">
+          <a href="#section-5-3">
+            <div>
+              <div class="bullet">
+                <div></div>
+              </div>
+              <p>5.3 Architecture</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-6">
+          <a href="#section-6">
+            <div>
+              <div class="bullet">
+                <div></div>
+              </div>
+              <p>6. Design Decisions</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-6" class="subitem">
+          <a href="#section-6-1">
+            <div>
+              <div class="bullet">
+                <div></div>
+              </div>
+              <p>6.1 Grafana vs Custom UI</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-6" class="subitem">
+          <a href="#section-6-2">
+            <div>
+              <div class="bullet">
+                <div></div>
+              </div>
+              <p>6.2 GraphQL Server Choice</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-7">
+          <a href="#section-7">
+            <div>
+              <div class="bullet">
+                <div></div>
+              </div>
+              <p>7. Implementation Challenges</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-7" class="subitem">
+          <a href="#section-7-1">
+            <div>
+              <div class="bullet">
+                <div></div>
+              </div>
+              <p>7.1 Generating Metrics Data from express-graphql</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-7" class="subitem">
+          <a href="#section-7-2">
+            <div>
+              <div class="bullet">
+                <div></div>
+              </div>
+              <p>7.2 Connecting Metrics with Traces</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-8">
+          <a href="#section-8">
+            <div>
+              <div class="bullet">
+                <div></div>
+              </div>
+              <p>8. Installing and Using QMantis</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-9">
+          <a href="#section-9">
+            <div>
+              <div class="bullet">
+                <div></div>
+              </div>
+              <p>9. Future Work</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-9" class="subitem">
+          <a href="#section-9-1">
+            <div>
+              <div class="bullet">
+                <div></div>
+              </div>
+              <p>9.1 Expanding Metrics</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-9" class="subitem">
+          <a href="#section-9-2">
+            <div>
+              <div class="bullet">
+                <div></div>
+              </div>
+              <p>9.2 Connecting Metrics and Traces</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-9" class="subitem">
+          <a href="#section-9-3">
+            <div>
+              <div class="bullet">
+                <div></div>
+              </div>
+              <p>9.3 Adding More GraphQL Server Types</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-9" class="subitem">
+          <a href="#section-9-4">
+            <div>
+              <div class="bullet">
+                <div></div>
+              </div>
+              <p>9.4 Incorporating Alerts</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-10">
+          <a href="#section-10">
+            <div>
+              <div class="bullet">
+                <div></div>
+              </div>
+              <p>10. References</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </aside>
+
+    <div id="case-study" class="main-section">
+      <div id="case-study-content">
+        <div class="prose">
+          <h1>Case Study</h1>
+          <h2 id="section-1">1. Introduction</h2>
+          <p>
+            Herald is an observability solution that simplifies deployment of 
+            the ELK stack, a popular set of tools used for monitoring the 
+            health and performance of software systems. It allows software 
+            developers to conveniently collect and explore telemetry data, 
+            including logs, traces, and metrics, through a single, 
+            user-friendly interface.
+          </p>
+          <p>
+            It may be unclear why small applications need an observability 
+            solution. Smaller apps typically have fewer components and fewer 
+            interactions between those components compared to larger apps. But 
+            as those applications grow in size and complexity, monitoring 
+            their health and performance and diagnosing problems when failures 
+            occur becomes increasingly challenging.
+          </p>
+          <img
+            class="lazy downsize-xl"
+            data-src="images/diagrams/small-app-vs-large-app.png"
+            alt="Small App versus Large App"
+          />
+          <p>
+            For example, a developer may start by checking logs to diagnose an 
+            issue. In a smaller app, those logs are likely located in a single 
+            place, making it easier to isolate the problem. But in a more 
+            extensive app, the various components may produce their logs in 
+            separate locations. In this case, the developer needs help 
+            locating the source of the error.
+          </p>
+          <img
+            class="lazy downsize-xl"
+            data-src="images/diagrams/small-app-vs-large-app-logs.png"
+            alt="Loooking at Logs in Small App versus Large App"
+          />
+          <p>
+            That’s where observability helps. Observability gives organizations 
+            a holistic picture of the health and performance of their software 
+            systems. As a result, organizations can detect and diagnose issues 
+            much faster than they otherwise would. Observability has become 
+            increasingly popular due to the growing complexity of software 
+            systems and the exponential increase in the number and types of 
+            issues organizations can encounter.
+          </p>
+          <p>
+            Below we look more deeply into what observability is, why it’s 
+            important, and the challenges involved in implementing it. Then we 
+            explore some existing observability solutions. We then take a 
+            closer look at what Herald is and what it does. Finally, we outline 
+            some of the design decisions we made and implementation challenges 
+            we faced in building Herald.
+          </p>
+          <h2 id="section-2">2. Observability</h2>
+          <p>
+            Observability is the ability to understand how a system is 
+            functioning based on its outputs and behaviors. Data is used to 
+            provide a holistic view of a system, allowing developers and 
+            operators to understand how a system is functioning and helping 
+            identify issues that may be impacting its performance.
+          </p>
+          <img
+            class="lazy downsize-s"
+            data-src="images/diagrams/three-pillars-shadow.png"
+            alt="three pillars of observability"
+          />
+          <p>
+            Observability uses three types of telemetry data, often referred to 
+            as the three pillars of observability: logs, traces, and metrics. 
+            This data provides visibility into a software system and allows 
+            development teams to get to the root cause of various issues to 
+            improve performance. Below we take a closer look at each type of 
+            data.
+          </p>
+          <h3 id="section-2-1">2.1 Logs</h3>
+          <img
+            class="lazy downsize-s"
+            data-src="images/diagrams/pillar-log-shadow.png"
+            alt="observability pillar logs"
+          />
+          <p>
+            Logs are records of events or messages a software application or 
+            system generates. They are typically very detailed and provide 
+            information about a specific event or action within a software 
+            system. Information contained in logs includes:
+          </p>
+          <ul>
+            <li>
+              Timestamps: The time at which an event occurred
+            </li>
+            <li>
+              Message content: A description of the event, error, or action 
+              taken
+            </li>
+            <li>
+              Severity level: A classification of the importance or severity 
+              of the event, such as "debug", "info", "warning", or "error"
+            </li>
+            <li>
+              Contextual information: Additional information related to the 
+              event, such as user or device information
+            </li>
+          </ul>
+          <p>
+            By collecting this information, logs provide a record of system 
+            activity that can be used to identify issues, track down bugs, and 
+            gain insights into the behavior and performance of the system.
+          </p>
+          <p>
+            To further understand the role of logs, it is helpful to delve into 
+            an example of how logs can be used to diagnose and solve issues. 
+            Consider a web application experiencing slow response times and 
+            occasional errors when users try to upload images.
+          </p>
+          <p>
+            To diagnose the problem, the development team examines the 
+            application's logs. They notice several log messages related to 
+            failed image uploads, which provide error codes and additional 
+            information about the nature of the failures.
+          </p>
+          <img
+            class="lazy downsize-l"
+            data-src="images/diagrams/logs-output-example.png"
+            alt="observability pillar logs"
+          />
+          <p>
+            Based on this information, the development team can identify 
+            several issues contributing to the slow upload times and error 
+            messages. They find the application's image upload functionality is 
+            not optimized for handling large files and is thus causing slow 
+            response times and occasional failures. Additionally, they discover 
+            users have been trying to upload unsupported file types.
+          </p>
+          <p>
+            With this information in hand, the development team can make 
+            changes to the application's code and configuration to improve the 
+            performance and stability of the image upload functionality.
+          </p>
+          <h3 id="section-2-2">2.2 Traces</h3>
+          <img
+            class="lazy downsize-s"
+            data-src="images/diagrams/pillar-trace-shadow.png"
+            alt="observability pillar traces"
+          />
+          <p>
+            Tracing is a method of analyzing a software system by collecting 
+            data about the different stages of a request as it passes through 
+            various components or services of the system. It involves creating 
+            a "trace" that includes information about each step of the request.
+          </p>
+          <p>
+            Each request is assigned a uniquely generated ID. This ID provides 
+            context for the trace, ensuring that specific events that take 
+            place during the request lifecycle are correlated with each other. 
+            The ID is passed from one service to another as the execution of 
+            the request progresses, propagating the context throughout the 
+            request lifecycle.
+          </p>
+          <img
+            class="lazy downsize-l"
+            data-src="images/diagrams/request-lifecycle-context.png"
+            alt="propagating context through request lifecycle"
+          />
+          <p>
+            A trace comprises one or more spans. A span represents a specific 
+            piece of work performed by a specific service within the request 
+            path, such as an HTTP request or a call to a database. Spans 
+            contain important information, such as the start and end times of 
+            the work, as well as any metadata that might be relevant to 
+            understanding the span.
+          </p>
+          <img
+            class="lazy downsize-l"
+            data-src="images/diagrams/a-trace.png"
+            alt="a trace"
+          />
+          <p>
+            The trace can help engineers identify the different services the 
+            request passes through and how they interact with each other. By 
+            analyzing a trace, developers can determine where the request spent 
+            the most time, and which services were involved. This information 
+            can be used to identify performance bottlenecks, optimize the 
+            system, and improve the user experience.
+          </p>
+          <h3 id="section-2-3">2.3 Metrics</h3>
+          <img
+            class="lazy downsize-s"
+            data-src="images/diagrams/pillar-metric-shadow.png"
+            alt="observability pillar metrics"
+          />
+          <p>
+            Metrics are like vital signs for a software system. They are a 
+            numeric representation of data measured over intervals of time. 
+            They help developers understand the health of a system. By setting 
+            performance goals and baselines, metrics allow developers to track 
+            whether a system is meeting its targets and catch problems before 
+            they become critical.
+          </p>
+          <img
+            class="lazy downsize-m"
+            data-src="images/diagrams/metrics.png"
+            alt="metrics"
+          />
+          <p>
+            There are different types of metrics, including:
+          </p>
+          <ul>
+            <li>
+              Resource utilization metrics, such as CPU usage, memory usage, 
+              disk space usage, and network bandwidth usage, measure the number 
+              of resources the system uses.
+            </li>
+            <li>
+              Performance metrics, such as response time, latency, and 
+              throughput, measure the system's responsiveness and how quickly 
+              it processes requests.
+            </li>
+            <li>
+              Error rate metrics, such as the number of errors, exceptions, or 
+              failures within the system, measure the frequency of errors and 
+              help administrators identify areas that need improvement.
+            </li>
+            <li>
+              Availability metrics, such as the percentage of time the system 
+              is up and running, measure the system's uptime and downtime
+            </li>
+          </ul>
+          <p>
+            Metrics can alert developers to current or potential problems 
+            impacting their systems. Metrics on CPU and memory usage might 
+            indicate that the system’s resources are at capacity and may need 
+            to be scaled.
+          </p>
+          <img
+            class="lazy downsize-m"
+            data-src="images/diagrams/cpu-mem.png"
+            alt="cpu and memory usage"
+          />
+          <h3 id="section-2-4">2.4 Integrating Logs, Traces, and Metrics</h3>
+          <p>
+            Logs, traces, and metrics work together to provide developers with 
+            observability of their software systems, allowing them to diagnose 
+            issues and improve system performance. To illustrate how developers 
+            can use logs, traces, and metrics together to diagnose a problem 
+            and help them fix it, let’s walk through an example.
+          </p>
+          <p>
+            Suppose a developer is responsible for a web application that 
+            allows users to purchase items online. Upon checking some metrics 
+            related to the performance of the app, the developer notices that 
+            the average response time and error rate for the app’s checkout 
+            page have increased. They suspect there may be an issue causing the 
+            slowdown.
+          </p>
+          <img
+            class="lazy downsize-l"
+            data-src="images/diagrams/response-time-error-rate.png"
+            alt="average response time and error rate"
+          />
+          <p>
+            Based on these metrics, the developer uses tracing to follow a 
+            request through the system and pinpoint where a potential issue may 
+            be occurring. They choose a recent transaction that experienced a 
+            slow response time and use a tracing tool to follow the request as 
+            it moved through the system.
+          </p>
+          <p>
+            The tracing tool shows that the request spent a significant amount 
+            of time in a particular microservice responsible for verifying the 
+            user's payment details. The developer suspects there may be an 
+            issue with this microservice and that further investigation is 
+            required to track down the cause.
+          </p>
+          <img
+            class="lazy downsize-xl"
+            data-src="images/diagrams/microservices-tracing.png"
+            alt="microservices tracing"
+          />
+          <p>
+            In the logs, the developer sees a large number of errors related to 
+            the payment gateway API being used by the microservice. The logs 
+            also show that the payment gateway API has recently changed its 
+            authentication method, which may be causing the errors.
+          </p>
+          <img
+            class="lazy downsize-l"
+            data-src="images/diagrams/logs-output-example-2.png"
+            alt="logs output"
+          />
+          <p>
+            Based on this information, the developer updates the microservice 
+            to use the new authentication method for the payment gateway API. 
+            They deploy the updated microservice to production and monitor the 
+            application's metrics, traces, and logs to verify the issue has 
+            been resolved.
+          </p>
+          <p>
+            Alone, each pillar of observability provides valuable information 
+            but not a complete picture. The metrics alerted the developer to 
+            the issue, the tracing helped them pinpoint where the issue was 
+            occurring, and the logs provided more detailed information about 
+            the root cause of the issue. By having insight into all three, 
+            developers get complete visibility of their system’s health and 
+            performance
+          </p>
+          <h3 id="section-2-5">2.5 The Challenge of Implementing Observability</h3>
+          <p>
+            Knowing that observability is important is one thing; making 
+            software systems observable is another. How does a development team 
+            aggregate their telemetry data into a single location in order to 
+            be visualized and analyzed?
+          </p>
+          <img
+            class="lazy downsize-l"
+            data-src="images/diagrams/app-servers-question-marks.png"
+            alt="how to aggregate telemetry data into single location"
+          />
+          <p>
+            The solution to this problem involves solving several smaller 
+            problems. Let's examine each of them.
+          </p>
+          <h4>Collection and Shipment</h4>
+          <p>
+            The first problem that needs to be solved is how to collect the 
+            data. Typically, this is accomplished with a collection agent 
+            installed on each component of the software system that is going to 
+            be observed.
+          </p>
+          <img
+            class="lazy downsize-s"
+            data-src="images/diagrams/collection-agent.png"
+            alt="collection agent"
+          />
+          <p>
+            This collection agent is responsible for collecting the data from 
+            the component and shipping it to some central location.
+          </p>
+          <img
+            class="lazy downsize-l"
+            data-src="images/diagrams/collection-agent-central.png"
+            alt="collection agent to central location"
+          />
+          <h4>Processing and Transformation</h4>
+          <p>
+            But before the data is shipped to the central location, there is 
+            another problem to solve. At this point, the data is still raw and 
+            unstructured. It will need to be processed and transformed into a 
+            form or structure suitable for a particular analysis. Thus, a data 
+            processor is needed before the data goes anywhere else.
+          </p>
+          <img
+            class="lazy downsize-xl"
+            data-src="images/diagrams/collection-agent-processor-central.png"
+            alt="collection agent to processor to central location"
+          />
+          <h4>Storage</h4>
+          <p>
+            The next problem concerns the central location. There needs to be 
+            some data storage component that can be queried for the purpose of 
+            visualization and analysis.
+          </p>
+          <img
+            class="lazy downsize-xl"
+            data-src="images/diagrams/collection-agent-processor-storage.png"
+            alt="collection agent to processor to data storage"
+          />
+          <p>
+            This data store should handle the continuous inflow of data and 
+            enable fast and efficient queries for real-time data analysis.
+          </p>
+          <h4>Visualization</h4>
+          <p>
+            The final problem to be solved is how to visualize that data so it 
+            can be gleaned for meaningful insights. What is needed is an 
+            intuitive and easy-to-use UI.
+          </p>
+          <img
+            class="lazy downsize-xl"
+            data-src="images/diagrams/agent-processor-storage-visualize.png"
+            alt="collection agent to processor to data storage to visualization"
+          />
+          <p>
+            Thus, to achieve observability, a solution is needed that performs 
+            the following four functions: data collection and shipment; data 
+            processing and transformation; data storage; and data visualization.
+          </p>
+          <img
+            class="lazy downsize-xl"
+            data-src="images/diagrams/full-pipeline.png"
+            alt="the full pipeline"
+          />
+          <p>
+            Next, we look at some of the existing solutions that aim to solve 
+            the observability problem for development teams.
+          </p>
+          <h2 id="section-3">3. Existing Solutions</h2>
+          <h3 id="section-3-1">3.1 Commercial Solutions</h3>
+          <img
+            class="lazy downsize-xl"
+            data-src="images/diagrams/paid-solutions-logos.png"
+            alt="commercial solutions"
+          />
+          <p>
+            Several companies offer various observability tools to satisfy most 
+            developers' needs. Examples include Datadog, New Relic, Honeycomb, 
+            and Logz.io. One of the benefits of using these observability tools 
+            is that they are typically easy to set up and feature-rich. Some of 
+            those extra features include infrastructure monitoring, network 
+            monitoring, and error tracking.
+          </p>
+          <p>
+            However, some commercial solutions may not be a good fit for 
+            software teams concerned about data and infrastructure ownership. 
+            In particular, teams working with sensitive data or in highly 
+            regulated industries may be wary of using third-party solutions due 
+            to concerns about data privacy, security, and compliance. These 
+            teams may prefer to keep complete control over their data and 
+            infrastructure, including the ability to choose where and how it is 
+            stored and processed. Using a commercial solution may require 
+            relinquishing some of this control.
+          </p>
+          <p>
+            Commercial solutions also come at a cost that may be too high for 
+            smaller companies.
+          </p>
+          <h3 id="section-3-2">3.2 DIY Open-Source Solutions</h3>
+          <img
+            class="lazy downsize-xl"
+            data-src="images/diagrams/open-source-logos.png"
+            alt="open source solutions"
+          />
+          <p>
+            In addition to commercial observability solutions, various 
+            open-source observability tools are available that can provide a 
+            cost-effective alternative for developers. These tools offer 
+            various features for collecting, analyzing, and visualizing log, 
+            metric, and tracing data while also providing flexibility in terms 
+            of data ownership and infrastructure. Examples include 
+            OpenTelemetry, Prometheus, Jaeger, fluentd, and the ELK stack, 
+            which consists of Elasticsearch, Logstash, and Kibana.
+          </p>
+          <p>
+            While open-source observability tools offer many advantages, such 
+            as data ownership and cost savings, deploying and managing these 
+            tools can be significantly more complex than commercial solutions. 
+            Piecing together various observability tools in order to collect, 
+            process, store, and visualize telemetry data can require 
+            substantial time and expertise. This may not be feasible for 
+            smaller development teams. This complexity is abstracted away with 
+            the commercial solutions.
+          </p>
+          <h3 id="section-3-3">3.3 Herald</h3>
+          <img
+            class="lazy downsize-l"
+            data-src="images/diagrams/herald-icon-with-title-shadow.png"
+            alt="herald icon"
+          />
+          <p>
+            That’s where Herald comes in. Herald bridges the gap between 
+            commercial and open-source solutions. It is an open-source 
+            observability solution that abstracts away the complexity of 
+            setting up open-source tools while offering development teams the 
+            ability to maintain data and infrastructure ownership. Further, the 
+            only cost of using Herald is the cost of provisioning and using the 
+            Amazon Web Services (AWS) resources on which it is deployed.
+          </p>
+          <p>
+            Herald was built for growing applications that have reached a size 
+            where the ability to monitor their health and performance has 
+            become an issue. The growing complexity of these apps requires 
+            their development teams to consider a comprehensive observability 
+            solution. What is needed is a solution comprised of a set of 
+            battle-tested observability tools.
+          </p>
+          <p>
+            Herald is built on the ELK stack, a popular set of open-source 
+            tools commonly used for log management and analysis. The full ELK 
+            ecosystem also offers tools for trace and metric data. The 
+            combination of these tools provides a complete observability 
+            solution. 
+          </p>
+          <img
+            class="lazy downsize-m"
+            data-src="images/diagrams/herald-built-on-elk-stack.png"
+            alt="Herald is built on the ELK stack"
+          />
+          <p>
+            Combining other open-source tools into a complete observability 
+            solution is also possible. But managing these other tools 
+            necessitates developers becoming familiar with the separate 
+            documentation associated with each tool. These docs may be 
+            sufficient for understanding how each tool works on its own but are 
+            less helpful when the tools are combined.
+          </p>
+          <p>
+            The ELK stack, on the other hand, is managed by a single 
+            organization: Elastic. Elastic provides unified documentation on 
+            the entire stack, making it easier to troubleshoot issues that may 
+            arise between the various components of the stack. There is also a 
+            strong support community on which developers can rely.
+          </p>
+          <p>
+            The comprehensiveness of its documentation across the stack, the 
+            strong community of supporters, and its popularity make the ELK 
+            stack an ideal choice for developers just getting started with 
+            observability. The ELK stack is also battle-tested as several 
+            commercial solutions use it in their own offerings.
+          </p>
+          <p>
+            Setting up the ELK stack can be challenging, particularly for 
+            developers new to observability. The configuration details involved 
+            in setting up each component of the stack for complete 
+            observability can be overwhelming. However, Herald simplifies the 
+            process by abstracting away the complexity, providing an effortless 
+            deployment of the stack. With just a few commands, developers can 
+            quickly get started with Herald.
+          </p>
+          <p>
+            Below, we take a closer look at Herald and what it does.
+          </p>
+          <h2 id="section-4">4. The Herald Pipeline</h2>
+          <p>
+            The Herald pipeline comprises two separate data ingestion points, 
+            one for logs and another for traces and metrics, a data storage 
+            component, and a data visualization component. The following 
+            diagram illustrates the flow of data from ingestion points through 
+            to visualization.
+          </p>
+          <img
+            class="lazy downsize-xl"
+            data-src="images/diagrams/herald-observability-pipeline.png"
+            alt="the Herald pipeline"
+          />
+          <p>
+            This pipeline encompasses the main components required to achieve 
+            observability: data collection and shipment; data processing and 
+            transformation; data storage; and data visualization. Below, we 
+            look at each of these components in more detail.
+          </p>
+          <h3 id="section-4-1">4.1 Data Collection and Shipment</h3>
+          <p>
+            Recall the first problem to solve to achieve observability is 
+            collecting data from the various components of a software system 
+            and shipping them to some central location. Herald uses two 
+            separate tools for data collection and shipment: Filebeat for log 
+            data and the Application Performance Monitoring (APM) Agent for 
+            traces and metrics data.
+          </p>
+          <h4>Filebeat for Log Collection and Shipment</h4>
+          <img
+            class="lazy downsize-xl"
+            data-src="images/diagrams/pipeline-filebeat.png"
+            alt="pipeline filebeat"
+          />
+          <p>
+            Filebeat is a collection agent designed for collecting and shipping 
+            log data. Its primary function is to continuously scan for new log 
+            data and send such data to Logstash, where it is processed and 
+            transformed.
+          </p>
+          <p>
+            Filebeat is not part of the Herald deployment but is installed 
+            separately on the user's application servers. After installation, 
+            it must be configured to monitor specific log files and output the 
+            data to Logstash.
+          </p>
+          <h4>APM Agent for Traces & Metrics Collection and Shipment</h4>
+          <img
+            class="lazy downsize-xl"
+            data-src="images/diagrams/pipeline-apm-agent.png"
+            alt="pipeline APM agent"
+          />
+          <p>
+            For collecting and shipping traces and metrics data, we have 
+            Elastic APM Agents. APM agents are open-source libraries that 
+            collect data generated by an application. These agents are written 
+            in the same programming language (e.g. Golang, Python, or Node.js) 
+            as the application and can be easily installed like any other 
+            library.
+          </p>
+          <p>
+            Once installed, the user then instruments their code to allow the 
+            agents to collect tracing and metrics data. The APM agents then 
+            ship the data to the APM Server for processing.
+          </p>
+          <h3 id="section-4-2">4.2 Data Processing and Transformation</h3>
+          <p>
+            The next problem that needs to be solved to achieve observability 
+            is data processing and transformation. This component of the 
+            pipeline must be capable of processing data for particular analyses 
+            and transforming data into a format that is accepted by the data 
+            storage component. Herald uses two separate tools for data 
+            processing and transformation: Logstash for logs and the APM Server 
+            for traces and metrics.
+          </p>
+          <h4>Logstash for Log Data Processing</h4>
+          <img
+            class="lazy downsize-xl"
+            data-src="images/diagrams/pipeline-logstash.png"
+            alt="pipeline Logstash"
+          />
+          <p>
+            Within the Herald pipeline, Logstash is configured to ingest data 
+            from Filebeat. The user must configure Logstash with an appropriate 
+            filter that enables a specific transformation of the ingested data 
+            to support a specific application use case. For example, a user may 
+            use the “geoip” filter to add information about the geographical 
+            location of IP addresses. Once the data is processed, it is sent to 
+            Elasticsearch for storage and indexing.
+          </p>
+          <h4>APM Server for Traces & Metrics Processing</h4>
+          <img
+            class="lazy downsize-xl"
+            data-src="images/diagrams/pipeline-apm-server.png"
+            alt="pipeline APM server"
+          />
+          <p>
+            The APM Server comprises two parts: the Elastic Agent and the APM 
+            Integration. Elastic Agents are installed on the user’s application 
+            servers to receive different data types, such as metrics and 
+            traces, from the APM Agents.
+          </p>
+          <p>
+            The Elastic Agent can be updated with configurations enabling the 
+            collection of new or different data sources. The configurations are 
+            implemented through agent policies. The APM Integration is one of 
+            those configurations that gets specified within an agent policy.
+          </p>
+          <p>
+            The Elastic Agent with the APM Integration acts as the APM Server, 
+            which lives entirely on the user’s application server. The APM 
+            Server accepts tracing and metrics data from an APM Agent. The APM 
+            Server then processes the data, which includes validating it and 
+            transforming it into Elasticsearch documents before sending it on 
+            to Elasticsearch.
+          </p>
+          <img
+            class="lazy downsize-l"
+            data-src="images/diagrams/elasticagents-apm-es.png"
+            alt="APM server processing data and sending to Elasticsearch"
+          />
+          <h3 id="section-4-3">4.3 Data Storage</h3>
+          <p>
+            The next component required to achieve observability is the data 
+            storage component. The data store is where data will be housed and 
+            made available for querying by the visualization component.
+          </p>
+          <img
+            class="lazy downsize-xl"
+            data-src="images/diagrams/pipeline-elasticsearch.png"
+            alt="pipeline Elasticsearch"
+          />
+          <h4>Elasticsearch</h4>
+          <p>
+            Elasticsearch is a distributed search and analytics engine and 
+            document store. It stores complex data structures serialized as 
+            JSON documents. Elasticsearch stores and indexes data in a way that 
+            enables near real-time searching (i.e. within 1 second). It is a 
+            durable data store, which means it can persist long term data as 
+            needed. Within the Herald pipeline, Elasticsearch receives data 
+            from Logstash and the APM Server. It acts as a storage component 
+            that can be queried through Kibana to be visualized.
+          </p>
+          <img
+            class="lazy downsize-l"
+            data-src="images/diagrams/elasticsearch-pipe.png"
+            alt="data storage Elasticsearch"
+          />
+          <h3 id="section-4-4">4.4 Visualization</h3>
+          <p>
+            The final problem to be solved in order to achieve observability is 
+            the data visualization problem. Data sitting in the data store is 
+            only good if it can be visualized and analyzed.
+          </p>
+          <img
+            class="lazy downsize-xl"
+            data-src="images/diagrams/pipeline-kibana.png"
+            alt="pipeline Kibana"
+          />
+          <h4>Kibana</h4>
+          <p>
+            Kibana is a powerful open-source data visualization and exploration 
+            platform. It provides a user-friendly interface for searching, 
+            analyzing, and visualizing large volumes of data in real-time. With 
+            Kibana, you can search, observe, and analyze your data, and 
+            visualize your findings in charts, gauges, maps, and graphs.
+          </p>
+          <img
+            class="lazy downsize-l"
+            data-src="images/diagrams/kibana-screen.png"
+            alt="data visualization Kibana"
+          />
+          <p>Viewing logs in Kibana:</p>
+          <img
+            class="lazy downsize-xl"
+            data-src="images/diagrams/logs-in-kibana.png"
+            alt="viewing logs in Kibana"
+          />
+          <p>Viewing traces in Kibana:</p>
+          <img
+            class="lazy downsize-xl"
+            data-src="images/diagrams/traces-in-kibana.png"
+            alt="viewing traces in Kibana"
+          />
+          <p>Viewing metrics in Kibana:</p>
+          <img
+            class="lazy downsize-xl"
+            data-src="images/diagrams/metrics-in-kibana.png"
+            alt="viewing metrics in Kibana"
+          />
+          <h2 id="section-5">5. Our Solution: QMantis</h2>
+          <img
+            class="lazy downsize-l"
+            data-src="images/diagrams/comparison.png"
+            alt="comparison chart"
+          />
+          <p>
+            There is a third solution that Novels and Barns could use: QMantis.
+          </p>
+          <p>
+            As discussed earlier, QMantis is an open-source observability tool
+            for GraphQL APIs, designed for small applications. With QMantis,
+            Novels and Barns gets to maintain control over their data without
+            needing to export it to a third-party.
+          </p>
+          <p>
+            QMantis is well-documented and designed for easy setup, reducing
+            time cost. Users are able to see both metrics and traces, all in one
+            dashboard, even though QMantis has fewer features than the
+            fully-managed cloud solutions.
+          </p>
+          <p>
+            Finally, QMantis is free and open-source. There are no time or
+            storage limitations, so Novels and Barns can invest their funds into
+            other business needs.
+          </p>
+
+          <h3 id="section-5-1">5.1 How Novels and Barns Can Use QMantis</h3>
+          <p>
+            After discussing the pros and cons of the various existing GraphQL
+            observability solutions, Novels and Barns has found QMantis to be
+            the best fit for their business.
+          </p>
+          <img
+            class="lazy downsize-s"
+            data-src="images/diagrams/exclamation.png"
+            alt="Barns and Novels decided on QMantis"
+          />
+          <p>
+            Now, with QMantis, Novels and Barns' small development team can get
+            free metric and tracing coverage made specifically for GraphQL APIs,
+            without having to learn or implement any other observability
+            technologies. They can check their mobile application's usage by
+            monitoring its request rate, error rate, and overall latency. They
+            can also analyze and distinguish every request made to the GraphQL
+            endpoint.
+          </p>
+          <p>
+            Further, Novels and Barns can determine their application's usage
+            trends by analyzing each operation and resolvers' runtime. With the
+            growing success of their business and their recent surge in users,
+            they can more quickly investigate and address bottlenecks in their
+            mobile application, preventing high latency and ensuring customer
+            satisfaction.
+          </p>
+          <p>Here is an overview of what QMantis offers.</p>
+          <h3 id="section-5-2">5.2 An Overview of QMantis</h3>
+          <h4 id="section-5-2-1">5.2.1 Main Dashboard</h4>
+          <img
+            class="lazy shadow downsize-xl"
+            data-src="images/diagrams/dashboard.png"
+            alt="Grafana dashboard"
+          />
+          <p>
+            The screenshot above shows what a QMantis dashboard may look like
+            for a user like Novels and Barns. The dashboard shows metrics and
+            traces side by side. Being able to view metrics and traces in the
+            same place provides insight into what is going on with the GraphQL
+            API. For example, on the top row are some metrics panels; here, the
+            request rate and error rate move together, as expected. However, in
+            the panels below the first row, it is evident that the average
+            latency of requests is spiking outside of any increase in traffic.
+            When metrics are seen alongside traces, it is clear that some
+            outliers are driving up the average latency time, and should be
+            investigated.
+          </p>
+          <h4 id="section-5-2-2">5.2.2 Analyzing Traces</h4>
+          <p>
+            With QMantis, the user can easily analyze traces for every request
+            made to the <code>/graphql</code> endpoint.
+          </p>
+          <p>
+            Below, we can see what a typical trace should look like for a simple
+            query when viewed using Grafana (QMantis' visual layer).
+          </p>
+          <img
+            class="lazy shadow downsize-xl"
+            data-src="images/diagrams/traces2.png"
+            alt="traces for a simple query"
+          />
+          <p>
+            In this query, books from a particular author are fetched, along
+            with the genres of those books. Far on the right hand of the image,
+            in the condensed span section, there are multiple spans executing at
+            the same time. This is exactly what an efficient query looks like
+            when visualized.
+          </p>
+          <p>
+            Once the author is fetched, all the books related to that author,
+            and the genres related to that book, are fetched asynchronously. On
+            the left-hand side, it is possible to see exactly what is fetched
+            while each span executes. This visualization gives valuable insight
+            into the GraphQL resolver that was used to fetch this data and makes
+            it easy to see where any inefficiencies are negatively impacting a
+            server's response time.
+          </p>
+          <h4 id="section-5-2-3">5.2.3 Investigating Bottlenecks</h4>
+          <p>
+            When viewing traces from the QMantis dashboard, it is easy to spot
+            slow requests. With the growing success of the Novels and Barns'
+            business and their recent surge in users, they can use QMantis to
+            quickly investigate and address bottlenecks in their application. By
+            doing so, their team can efficiently respond to issues such as high
+            latency, contributing to customer satisfaction.
+          </p>
+          <img
+            class="lazy shadow downsize-xl"
+            data-src="images/diagrams/traces.png"
+            alt="investigating bottlenecks in traces"
+          />
+          <p>
+            In the above image, there are some outlying traces. Sometimes, an
+            outlying trace is related to an operation that usually runs in line
+            with the rest of the GraphQL operations. If this is the case, then
+            the issue is usually related to something outside of the GraphQL
+            API, such as a temporarily overloaded database. In this case,
+            however, each of the outliers is related to the same GraphQL query
+            named allBooks (the operation name, as well as other relevant
+            information, can be seen when hovering over a trace), so it is time
+            to investigate that resolver.
+          </p>
+          <h4 id="section-5-2-4">5.2.4 Visualizing Resolver Runtime</h4>
+          <img
+            class="lazy shadow downsize-xl"
+            data-src="images/diagrams/bad-trace.png"
+            alt="bad trace"
+          />
+          <p>
+            By clicking on a trace, it is possible to get more detailed
+            information about that trace and its spans. Above is an individual
+            view of one of the outlying traces that was shown in the previous
+            image. Here, spans are executed synchronously, and information for
+            only 20 books is fetched in nearly half a second. What happens when
+            making much larger requests that fetch information for 100, or 1,000
+            books? This inefficient query defeats the purpose of switching to
+            GraphQL in order to improve response times and may increase response
+            time when compared to a REST API.
+          </p>
+          <img
+            class="lazy shadow downsize-xl"
+            data-src="images/diagrams/bad-resolver.png"
+            alt="bad resolver"
+          />
+          <p>
+            By examining the allBooks resolver function above, it is obvious
+            that the function can be optimized. This particular resolver returns
+            a promise, which in turn, returns a map of the original result,
+            which in turn, returns a promise that populates the genres field
+            once the authors field is populated for each book. There is a lot of
+            waiting, and it makes the response to this query unnecessarily slow.
+          </p>
+          <p>
+            Now, compare the above inefficient resolver to the resolver below,
+            which is much more efficient:
+          </p>
+          <img
+            class="lazy shadow downsize-l"
+            data-src="images/diagrams/good-resolver.png"
+            alt="good resolver"
+          />
+          <img
+            class="lazy shadow downsize-xl"
+            data-src="images/diagrams/good-trace.png"
+            alt="good trace"
+          />
+          <p>
+            The above image shows trace information for the operation made using
+            the efficient resolver. In the above trace, spans execute
+            asynchronously. There are no significant gaps between span
+            executions, and latency time is now under 200 ms. In an expanded
+            view of this trace that shows all of its 156 spans, the first group
+            of asynchronous spans retrieves books, while the second group
+            retrieves authors and genres related to those books. Since it is
+            impossible to find the author or the genre of a book before knowing
+            what the book is, this is as efficient as this query can get. In
+            addition, this trace gives us confidence that this resolver could
+            return a much larger dataset without greatly increasing the response
+            time of the server due to its asynchronous nature.
+          </p>
+          <p>
+            This example may seem contrived and a little unrealistic, and it
+            probably is for such a simple query, but for people new to GraphQL,
+            or when dealing with more complicated resolvers, this is a big
+            issue. If a company like Novels and Barns did not have a GraphQL
+            observability tool set up, an inefficient resolver could easily be
+            pushed into a production environment and go unnoticed for weeks,
+            months, or even years.
+          </p>
+          <p>
+            QMantis provides insight into many areas of a GraphQL API, not just
+            resolver performance, but highlighting an inefficient resolver is
+            important for two reasons. First, inefficient resolvers can be very
+            hard to spot in a working API without proper observability, and
+            second, this demonstrates how QMantis can be used to track down an
+            issue all the way from the dashboard to a resolver execution.
+          </p>
+          <p>
+            Now that we have a better understanding of the features of QMantis,
+            let us discuss its architecture.
+          </p>
+          <h3 id="section-5-3">5.3 Architecture</h3>
+          <img
+            class="lazy downsize-xl"
+            data-src="images/diagrams/full-architecture.png"
+            alt="full architecture"
+          />
+          <p>
+            This diagram gives an overview of the QMantis architecture. There
+            are two main overarching and interconnected components:
+            <code>qmantis-express</code> and <code>qmantis-compose</code>. On
+            the left, <code>qmantis-express</code> is a npm package with a
+            configured <code>express-graphql</code> server that is responsible
+            for generating the metrics and traces. On the right,
+            <code>qmantis-compose</code> lets the user deploy the QMantis
+            architecture on their own server using Docker in order to process,
+            export, store, and visualize incoming metrics and traces.
+          </p>
+          <p>
+            Now, to provide a better understanding, let us break up this
+            architecture into key phases.
+          </p>
+          <img
+            class="lazy downsize-l"
+            data-src="images/diagrams/phases.png"
+            alt="all phases"
+          />
+          <p>
+            The QMantis architecture is split up into four major conceptual
+            phases: <br /><strong>Phase 1:</strong> Generate Traces and Metrics
+            with a GraphQL server and OpenTelemetry SDKs <br /><strong
+              >Phase 2:</strong
+            >
+            Export Data for Processing and Storage <br /><strong
+              >Phase 3:</strong
+            >
+            Store Data with Promscale / TimescaleDB <br /><strong
+              >Phase 4:</strong
+            >
+            Visualize / Analyze Data with Grafana
+          </p>
+          <h4 id="section-5-3-1">
+            5.3.1 Phase 1: Generate Data with the qmantis-express GraphQL server
+            and OpenTelemetry SDKs
+          </h4>
+          <img
+            class="lazy downsize-l"
+            data-src="images/diagrams/phase1.png"
+            alt="phase 1"
+          />
+          <p>
+            The first phase of the QMantis architecture, which is part of the
+            <code>qmantis-express</code> component, is to generate the metrics
+            and traces. In order to eventually visualize the data on the
+            dashboard, the data has to be created first. QMantis uses
+            OpenTelemetry to generate and collect telemetry data such as metrics
+            and traces.
+          </p>
+          <p>
+            OpenTelemetry is an open-source project that is composed of a
+            collection of tools, including APIs and SDKs. It is the current
+            leading developer tool kit for generating, collecting, and exporting
+            telemetry data <sup><a href="#section-10">[5]</a></sup
+            >. In QMantis' use case, we use OpenTelementry to instrument a
+            GraphQL API.
+          </p>
+          <p>
+            To create the telemetry data, we configured an existing GraphQL
+            server with observability extensions, added custom express
+            middleware functions, and added two pre-configured OpenTelemetry
+            Node SDKs (one for tracing, the other for metrics).
+          </p>
+          <img
+            class="lazy downsize-xl"
+            data-src="images/diagrams/tag.png"
+            alt="tag error"
+          />
+          <p>
+            This is a crucial phase of the QMantis architecture because it is
+            when we ensure the data we generate is specific to GraphQL. For
+            example, the <code>qmantis-express</code> component checks the
+            response object to see if there is an errors property. If there is
+            one, it updates the error rate counter. Also, one of the panels in
+            the QMantis dashboard has all traces that contain an error. As
+            mentioned earlier, developers cannot rely on a response status code
+            to filter traces for errors, as most GraphQL responses, regardless
+            of their success, return a status code of 200. To address this, we
+            added custom error tags as needed, making it easy to filter and
+            visualize all traces with errors.
+          </p>
+          <p>
+            Additionally, the majority of GraphQL requests are POST requests.
+            The default name of a trace is the corresponding request HTTP
+            method, however, this is not meaningful to the user, since the
+            majority of traces would be named “HTTP POST”. Therefore, our team
+            altered each trace so that the user could distinguish between traces
+            more easily. Our custom middleware fetches the operation name from
+            the request body. If the user does not provide a name, then the
+            operation name becomes the operation type.
+          </p>
+          <h4 id="section-5-3-2">
+            5.3.2 Phase 2: Export to the OpenTelemetry Collector and Prometheus
+          </h4>
+          <img
+            class="lazy downsize-l"
+            data-src="images/diagrams/phase2.png"
+            alt="phase 2"
+          />
+          <p>
+            The Export phase, the 2nd phase of the QMantis architecture, is part
+            of the <code>qmantis-compose</code> component. Once telemetry data
+            is created, it needs to be exported before anything useful can be
+            done to it.
+          </p>
+          <p>
+            In the case of traces, the data is exported to the OpenTelemetry
+            Collector. The OpenTelemetry Collector is a central component that
+            handles additional steps such as batching and processing of traces
+            <sup><a href="#section-10">[6]</a></sup
+            >. It consists of three main elements: receivers, processors, and
+            exporters, as seen below:
+          </p>
+          <img
+            class="lazy downsize-xl"
+            data-src="images/diagrams/ot-collector.png"
+            alt="OpenTelemetry collector"
+          />
+          <p>
+            A receiver is how data gets into the collector and an exporter is
+            how data is sent to a specified destination. Processors are run on
+            data between being received and being exported, transforming it into
+            a common format, or adding metadata.
+          </p>
+          <p>
+            For the purposes of the QMantis Architecture, the Collector offloads
+            the responsibility of the application to manage the collected data,
+            which reduces overhead. Using the collector, our custom processors
+            add useful GraphQL information to each trace. Some of the spans in a
+            trace are given customized names, so, for example, users can
+            distinguish one request's field resolver from another without having
+            to click into each span for more information.
+          </p>
+          <p>
+            In the case of metrics, they are exported to Prometheus, which is an
+            open-source systems monitoring service that collects and stores
+            metrics as time-series data, meaning metrics information is stored
+            with the timestamp at which it was recorded. The purpose of
+            exporting metrics to Prometheus is to make the data compatible for
+            the next phase.
+          </p>
+          <p>
+            Now that the data has been generated and processed into a readable
+            and more meaningful format, making it easier to work with for
+            observability purposes, this data can be exported to long-term
+            storage, which is the following phase.
+          </p>
+          <h4 id="section-5-3-3">
+            5.3.3 Phase 3: Storage with Promscale / TimescaleDB
+          </h4>
+          <img
+            class="lazy downsize-l"
+            data-src="images/diagrams/phase3.png"
+            alt="phase 3"
+          />
+          <p>
+            The third phase of the QMantis architecture, which is part of the
+            <code>qmantis-compose</code> component, is storage. Before we can
+            visualize and analyze telemetry data on Grafana, data needs to be
+            stored somewhere. Long-term storage is useful for users because they
+            can access not only current data, but also older data, which will be
+            very helpful if they want to analyze trends in their GraphQL API.
+          </p>
+          <p>
+            As time is a key component of how QMantis generates and reads data,
+            we chose to use a time-series database, as it is optimized for
+            time-stamped data. Time matters. If there is a potential problem, it
+            is important to know if it happened at 1 pm or 8 pm. If a user wants
+            to do maintenance during downtime, they need to know when there are
+            the downtimes. Also, time-series databases support a high rate of
+            inserts and a low rate of modifications and deletions. This is a
+            great fit for QMantis' use case because when a metric or trace is
+            created, there is no need to ever change it—the user only needs to
+            insert it and read it.
+          </p>
+          <p>
+            Specifically, QMantis uses TimescaleDB, an open-source time-series
+            database powered by SQL, with Promscale, a backend extension that
+            connects telemetry data to TimescaleDB. This database has no time
+            limit or cost involved in storing telemetry data for users.
+            Moreover, it allows us to keep everything in one place, therefore
+            simplifying our architecture, since we can store both metrics and
+            traces data on the same database.
+          </p>
+          <p>
+            Another main benefit of using TimescaleDB is that it leverages
+            PostgreSQL to store data, an established data store that is used
+            widely among developers. The choice to use TimescaleDB means that it
+            is easier for users to understand how their data is stored. Also,
+            using Promscale and Timescale for data storage allows users to
+            easily connect that data to Grafana, giving them the ability to
+            fully leverage Grafana's built-in queries.
+          </p>
+          <h4 id="section-5-3-4">
+            5.3.4 Phase 4: Visualize / Analyze with Grafana
+          </h4>
+          <img
+            class="lazy downsize-l"
+            data-src="images/diagrams/phase4.png"
+            alt="phase 4"
+          />
+          <p>
+            Finally, the last phase of the
+            <code>qmantis-compose</code> component involves visualizing and
+            analyzing data. To visualize the data, our team chose to use
+            Grafana, a popular open-source tool for observability dashboards
+            that comes with many options and functionalities. Our team
+            pre-configured an observability dashboard so that users can view and
+            analyze their application's request rate, request latency, error
+            rate, all their traces, and error traces. Grafana connects directly
+            to the Promscale connector and TimescaleDB in order to obtain
+            metrics data, as well as Jaeger, an open-source tool for end-to-end
+            distributed tracing, to query the traces data. In the design
+            decisions section, we will discuss in detail why we chose Grafana as
+            our visualization tool.
+          </p>
+          <h4 id="section-5-3-5">
+            5.3.5 Overall View of QMantis Architecture's Components
+          </h4>
+          <img
+            class="lazy downsize-xl"
+            data-src="images/diagrams/full-architecture-phases.png"
+            alt="full architecture with phases"
+          />
+          <p>
+            To recap, the above illustrates the QMantis architecture and its two
+            main components: <code>qmantis-express</code> (which consists of the
+            Generate phase) and <code>qmantis-compose</code> (which consists of
+            the Export, Store, and Visualize phases).
+          </p>
+          <p>
+            In summary, <code>qmantis-express</code> is a npm package, composed
+            of OpenTelemetry SDKs and a GraphQL server observability
+            configuration. It is responsible for generating the metrics and
+            traces data.<code>qmantis-compose</code> lets the user quickly and
+            seamlessly deploy the QMantis architecture on their own server using
+            Docker. It contains all the tools necessary to export, store, and
+            visualize GraphQL-specific observability data.
+          </p>
+          <h2 id="section-6">6. Design Decisions</h2>
+          <p>
+            Let us now go over some of the important design decisions we made
+            while developing QMantis.
+          </p>
+          <h3 id="section-6-1">6.1 Grafana vs Custom UI</h3>
+          <p>
+            When it came to visualizing data, our team considered two
+            options—building a custom user interface or using Grafana. A custom
+            UI would have provided two main benefits: we could have branded the
+            UI to add a QMantis-specific design, and we could have displayed
+            data more intuitively, especially for a first-time user. On another
+            hand, we would have to maintain a whole extra code base and any
+            updates to the UI would demand a lot of time.
+          </p>
+
+          <p>
+            Grafana, an industry-standard observability tool that many
+            developers are already familiar with, is extremely customizable.
+            Once a user has QMantis running, they can change the dashboard and
+            query settings to best fit their needs. To give an example, projects
+            at different points in the development cycle may want to query data
+            by different lengths of time, and Grafana makes that very easy.
+            Moreover, if our team decides to update the dashboard or panels in
+            the future, reconfiguration would be relatively simple.
+          </p>
+
+          <p>
+            Ultimately, the pros of building a custom UI did not outweigh the
+            pros of using Grafana, so we chose to go with Grafana.
+          </p>
+          <h3 id="section-6-2">6.2 GraphQL Server Choice</h3>
+          <p>
+            Early on in the process of building QMantis, our team considered
+            building our own GraphQL server. This would have given us control
+            over the implementation of the server and made it simple to generate
+            and collect data exactly how we wanted. However, if a developer had
+            an already existing GraphQL API, they would have had to change their
+            code to work with our less popular server in order to gain
+            observability. Taking this into consideration, we decided it would
+            be more useful to build a tool that could work with an already
+            widely used GraphQL server.
+          </p>
+
+          <p>
+            Another option was to use <code>apollo-server</code>, a popular
+            GraphQL server package. Note that this is different than the fully
+            managed Apollo Studio observability service. Our team considered
+            using <code>apollo-server</code> to give users the option to use a
+            GraphQL server that was framework-agnostic for Node.js. However,
+            this option had a major downside—the way
+            <code>apollo-server</code> is implemented makes it very difficult to
+            extract meaningful trace data, even when creating custom plugins to
+            extract this information.
+          </p>
+
+          <p>
+            In the end, we landed on <code>express-graphql</code>, a popular
+            JavaScript server for GraphQL, used by millions of developers around
+            the world. <code>express-graphql</code> does not currently have any
+            out-of-the-box observability options—paid or unpaid, and it is
+            highly customizable, allowing for developers to create extensions
+            with observability features. With this in mind, we built the first
+            iteration of QMantis using an extended
+            <code>express-graphql</code> server, providing an observability
+            service packaged with an already popular GraphQL server.
+          </p>
+          <h2 id="section-7">7. Implementation Challenges</h2>
+          <h3 id="section-7-1">
+            7.1 Generating Metrics Data from express-graphql
+          </h3>
+          <p>
+            Using <code>express-graphql</code> as our GraphQL server came with
+            significant challenges. As we did not have control over the
+            implementation of the server, our team had to be creative in order
+            to collect the needed data from request and response
+            objects—information that is essential to generating accurate and
+            GraphQL-specific telemetry data, a key feature of QMantis.
+          </p>
+          <p>
+            The two most difficult pieces of observability metrics data to
+            obtain were: the error count and the latency data for requests that
+            had 4xx or 5xx status codes. To get accurate information, the server
+            needed to access the response object before it was sent back to the
+            client. To do that, we relied on a function from the
+            <code>express-graphql</code> server to access the response object.
+            However, when the status code was 4xx or 5xx, the
+            <code>express-graphql</code> server did not execute that function,
+            so it no longer checked for errors or latency information.
+          </p>
+          <img
+            class="lazy downsize-m"
+            data-src="images/diagrams/server-challenge.png"
+            alt="server challenge"
+          />
+          <p>
+            At this point, we considered modifying the QMantis architecture and
+            even prototyped a custom GraphQL server to get this data. This
+            approach worked, and we were able to obtain the needed data, but it
+            came with the limitations mentioned above. Ultimately, we found
+            better solutions to these challenges: using an existing npm package
+            called <code>response-time</code> to obtain latency data, and
+            passing trace data to a custom function to accurately count errors.
+          </p>
+          <h3 id="section-7-2">7.2 Connecting Metrics with Traces</h3>
+          <p>
+            Another significant challenge was connecting metrics with traces.
+            Initially, we wanted to connect metrics with traces to make it easy
+            for the developer to go from spotting a potential problem to getting
+            detailed trace information. How would that work? When the developer
+            spots something worth investigating, such as an outlier metric data
+            point, or an increase in the error rate, they would be able to click
+            on the datapoint, taking them to a list of traces that occurred
+            within that time frame.
+          </p>
+          <p>
+            After a lot of research, we found that the only way to have this
+            feature in Grafana was to use Grafana Tempo, Grafana's solution for
+            a traces backend. Currently, Grafana Tempo is only compatible with
+            an object storage database, such as Google Cloud Storage, Amazon S3,
+            or Azure Blob Storage. That meant we would need a different database
+            to store traces data, adding extra complexity to the QMantis
+            architecture. Another option was to build a custom UI, which was not
+            ideal, as discussed previously.
+          </p>
+          <p>
+            This left us with the challenge of making it easy to go from metrics
+            to traces in our dashboard. To overcome this obstacle, we created
+            two trace panels, one that shows traces by latency, making it easy
+            to spot the outliers, while the other only shows error traces. As
+            both metrics and traces have a time-stamp, it is easy for the user
+            to filter the traces panels to look for the information they need.
+          </p>
+
+          <p>
+            It is also worth noting that, as of early 2022, the leading paid
+            observability solutions for GraphQL do not currently support linking
+            metrics and traces together.
+          </p>
+          <h2 id="section-8">8. Installing and Using QMantis</h2>
+          <p>Starting up QMantis is simple and can be done in a few steps:</p>
+          <img
+            class="lazy downsize-xl"
+            data-src="images/diagrams/installation-steps.png"
+            alt="installation steps"
+          />
+          <p>
+            <span class="steps-number">1.</span> Install the
+            <code>qmantis-express</code> npm package. If
+            <code>qmantis-express</code> is not already installed, that needs to
+            be installed as well.
+          </p>
+          <img
+            class="lazy shadow downsize-l"
+            data-src="images/gifs/npm-install.gif"
+            alt="npm install"
+          />
+          <p>
+            <span class="steps-number">2.</span> Clone the
+            <code>qmantis-compose</code>
+            repository. This repository can be cloned anywhere on your machine.
+          </p>
+          <img
+            class="lazy shadow"
+            data-src="images/gifs/git-clone.gif"
+            alt="git clone"
+          />
+          <p>
+            <span class="steps-number">3.</span> Import the QMantis variables
+            into your “main” file. This is the file that imports the schema and
+            starts up the <code>express-graphql</code> server for your API. It
+            is crucial to note that all of the QMantis variables need to be
+            imported before the <code>express-graphql</code> server, or there
+            may be some issues with collecting traces.
+          </p>
+          <img
+            class="lazy shadow downsize-m"
+            data-src="images/diagrams/variable.png"
+            alt="variables to import"
+          />
+          <p>
+            <span class="steps-number">4.</span> Set up the route handlers for
+            your <code>/graphql</code> endpoint. Note that the QMantis
+            <code>registerLatency</code> function needs to be passed to the
+            <code>responseTime</code> function as an argument and the main
+            <code>qMantis</code> function needs to take the GraphQL schema as an
+            argument and be passed to the <code>express-graphql</code> server.
+          </p>
+          <img
+            class="lazy shadow downsize-m"
+            data-src="images/diagrams/route-handlers.png"
+            alt="route handlers"
+          />
+          <p>
+            <span class="steps-number">5.</span> Initialize the QMantis docker
+            container. <code>cd</code> into the
+            <code>qmantis-compose</code> repository and run
+            <code>docker compose up</code>. The docker images will start to show
+            in the terminal and the <code>qmantis-compose</code> container with
+            all the running images can be visualized on Docker Desktop.
+          </p>
+          <div class="docker-images">
+            <img
+              class="lazy shadow downsize-m"
+              data-src="images/gifs/docker-terminal.gif"
+              alt="Docker terminal"
+            />
+            <img
+              class="lazy shadow downsize-m"
+              data-src="images/diagrams/docker-desktop.png"
+              alt="Docker desktop"
+            />
+          </div>
+          <p>
+            <span class="steps-number">6.</span> That is it for setup! Now, you
+            will need some data before you can visualize it. If you have a
+            production server and are using QMantis with it, you can simply
+            deploy it and wait for requests to come in. If you are still in a
+            development environment, you can use GraphiQL or another tool of
+            your choice to make requests.
+          </p>
+          <p>
+            <span class="steps-number">7.</span> Once requests start to come in,
+            navigate to <code>localhost:3000</code> and view the prebuilt
+            QMantis dashboard in Grafana.
+          </p>
+          <h2 id="section-9">9. Future Work</h2>
+          <h3 id="section-9-1">9.1 Expanding Metrics</h3>
+          <p>
+            Our team believes adding certain datasets to the dashboard could
+            improve the usefulness of QMantis. Namely, we would like to be able
+            to see how often certain operations are requested, and the average
+            latency of specific operations. These features would allow
+            developers to get a quick read on the efficiency of individual
+            operations, and prioritize potential problems based on how often an
+            operation is requested.
+          </p>
+          <h3 id="section-9-2">9.2 Connecting Metrics and Traces</h3>
+          <p>
+            As discussed earlier, metrics and traces are not directly linked in
+            the current iteration of the QMantis dashboard. This will not be a
+            simple issue to solve, but our team is interested in continuing to
+            explore ways to offer this feature. In the long run, linking metrics
+            and traces together would be incredibly useful for quickly and
+            correctly diagnosing application issues.
+          </p>
+          <h3 id="section-9-3">9.3 Adding More GraphQL Server Types</h3>
+          <p>
+            Our team built the first iteration of QMantis using a customized
+            <code>express-graphql</code> server but would like to continue
+            working on the aforementioned customized
+            <code>apollo-server</code> prototype to give it fully functional
+            observability features, as this would give developers the
+            flexibility to work with various Node.js frameworks, aside from just
+            Express. Another option would be to add servers that work for other
+            languages, such as Ruby and Go.
+          </p>
+          <h3 id="section-9-4">9.4 Incorporating Alerts</h3>
+          <p>
+            Many observability platforms offer alerts via text, Slack, or email
+            when an issue arises. This is an interesting feature that could be
+            added to QMantis in the future, so users can add automated alerts
+            that are triggered by specific problems. Alerts would offer a nice
+            alternative to constantly having to check the Grafana dashboard for
+            issues.
+          </p>
+          <h2 id="section-10">10. References</h2>
+          <ol>
+            <li>
+              <p>
+                <a
+                  href="http://highscalability.com/latency-everywhere-and-it-costs-you-sales-how-crush-it"
+                  >http://highscalability.com/latency-everywhere-and-it-costs-you-sales-how-crush-it</a
+                >
+              </p>
+            </li>
+            <li>
+              <p>
+                <a
+                  href="https://blogs.windows.com/windowsdeveloper/2014/03/20/instrumenting-your-app-for-telemetry-and-analytics/"
+                  >https://blogs.windows.com/windowsdeveloper/2014/03/20/instrumenting-your-app-for-telemetry-and-analytics</a
+                >
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="https://en.wikipedia.org/wiki/Telemetry"
+                  >https://en.wikipedia.org/wiki/Telemetry</a
+                >
+              </p>
+            </li>
+            <li>
+              <p>
+                <a
+                  href="https://grafana.com/files/grafanacon_eu_2018/Tom_Wilkie_GrafanaCon_EU_2018.pdf"
+                  >https://grafana.com/files/grafanacon_eu_2018/Tom_Wilkie_GrafanaCon_EU_2018.pdf</a
+                >
+              </p>
+            </li>
+            <li>
+              <p>
+                <a
+                  href="https://opentelemetry.io/docs/concepts/what-is-opentelemetry/"
+                  >https://opentelemetry.io/docs/concepts/what-is-opentelemetry</a
+                >
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="https://opentelemetry.io/docs/collector/"
+                  >https://opentelemetry.io/docs/collector</a
+                >
+              </p>
+            </li>
+          </ol>
+          <img
+            class="lazy downsize-xs"
+            data-src="images/diagrams/mantis-pair.png"
+            alt="mantis pair"
+          />
+        </div>
+      </div>
+    </div>
+    <div id="presentation" class="main-section">
+      <div class="qmantis-floral-white">
+        <h2>Presentation</h2>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube-nocookie.com/embed/ECDKbk5-eqo"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+
+    <div id="our-team" class="main-section">
+      <div>
+        <div>
+          <div>
+            <h2>Meet Our Team</h2>
+            <p class="text-xl text-gray-300">
+              We are currently looking for opportunities. If you liked what you
+              saw and want to talk more, please reach out!
+            </p>
+          </div>
+          <ul class="people">
+            <li class="profile">
+              <img
+                class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56 lazy"
+                data-src="images/team/kathy.png"
+                alt="profile picture of Kathy"
+              />
+              <div>
+                <div>
+                  <h3>Kathy Fregoso</h3>
+                  <p>Los Angeles, CA, USA</p>
+                </div>
+
+                <ul class="social">
+                  <li>
+                    <a href="mailto:kathyfregoso@gmail.com" target="_blank"
+                      ><i class="fas fa-envelope"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/kathy-fregoso"
+                      target="_blank"
+                      ><i class="fab fa-linkedin"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/kathyfregoso" target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://kfreg.dev/" target="_blank"
+                      ><i class="fas fa-globe"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="profile">
+              <img
+                class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56 lazy"
+                data-src="images/team/kal.png"
+                alt="profile picture of Kal"
+              />
+              <div>
+                <div>
+                  <h3>Kal Krueger</h3>
+                  <p>Bozeman, MT, USA</p>
+                </div>
+
+                <ul class="social">
+                  <li>
+                    <a href="mailto:kkrueger19@gmail.com" target="_blank"
+                      ><i class="fas fa-envelope"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/kal-krueger-19a960161/"
+                      target="_blank"
+                      ><i class="fab fa-linkedin"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/kalkrueger" target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://kalkrueger.dev/" target="_blank"
+                      ><i class="fas fa-globe"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="profile">
+              <img
+                class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56 lazy"
+                data-src="images/team/lisa.png"
+                alt="profile picture of Lisa"
+              />
+              <div>
+                <div>
+                  <h3>Lisa Melo</h3>
+                  <p>Montreal, Quebec, Canada</p>
+                </div>
+
+                <ul class="social">
+                  <li>
+                    <a href="mailto:melo.lisamb@gmail.com" target="_blank"
+                      ><i class="fas fa-envelope"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/lisa-melo"
+                      target="_blank"
+                      ><i class="fab fa-linkedin"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/lisa-m1" target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://lisamelo.dev" target="_blank"
+                      ><i class="fas fa-globe"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="profile">
+              <img
+                class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56 lazy"
+                data-src="images/team/emily.png"
+                alt="profile picture of Emily"
+              />
+              <div>
+                <div>
+                  <h3>Emily Siu</h3>
+                  <p>Rockville, MD, USA</p>
+                </div>
+
+                <ul class="social">
+                  <li>
+                    <a href="mailto:emilyksiu@gmail.com" target="_blank"
+                      ><i class="fas fa-envelope"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/emilyksiu/"
+                      target="_blank"
+                      ><i class="fab fa-linkedin"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/eemkey" target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://emilysiu.dev" target="_blank"
+                      ><i class="fas fa-globe"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="javascripts/script.js"></script>
+  </body>
+</html>
