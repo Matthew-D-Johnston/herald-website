@@ -720,7 +720,7 @@ ol a {
   font-size: 3.5rem;
   font-weight: 800;
   color: var(--qmantis-floral-white);
-  margin-right: 45px;
+  margin-right: 0px;
 }
 
 #start-here h2.sm-header {
