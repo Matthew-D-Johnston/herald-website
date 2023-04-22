@@ -68,8 +68,8 @@
   }
 
   #header nav a.selected {
-    border-bottom-color: var(--qmantis-green-sheen);
-    color: var(--qmantis-dark-purple);
+    border-bottom-color: var(--herald-vivid-cerulean);
+    color: var(--herald-cool-black);
   }
 
   #mobile-menu,
