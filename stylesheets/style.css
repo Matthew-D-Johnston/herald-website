@@ -720,7 +720,7 @@ ol a {
   font-size: 3.5rem;
   font-weight: 800;
   color: var(--herald-ghost-white);
-  margin-right: 0px;
+  /* margin-right: 5%; */
 }
 
 #start-here h2.sm-header {
@@ -728,7 +728,6 @@ ol a {
   font-weight: 600;
   font-family: "Nunito", sans-serif;
   color: var(--herald-ghost-white);
-  margin-right: 0px;
 }
 
 #start-here h2.lg-header {
