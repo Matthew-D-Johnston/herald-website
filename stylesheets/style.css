@@ -10,6 +10,7 @@
   --herald-dark-orange: #ee5942;
   --herald-turquoise: #34eacf;
   --herald-ghost-white: #FAFBFE;
+  /* --herald-ghost-white: #ffffff; */
   --gray-50: #e8e3dc;
   --gray-100: #d3cecb;
   --gray-200: #b7b3b5;
@@ -480,6 +481,10 @@ img.shadow {
 
 ol a {
   overflow-wrap: break-word;
+}
+
+.img-background {
+  background-image: url('../images/diagrams/herald-ghost-white.png');
 }
 
 /* Our Team */
